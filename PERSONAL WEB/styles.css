@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
+    
   }
   
   .navbar {
@@ -28,12 +29,12 @@
     margin-left: auto;
     padding-right: 50px;
     padding-left: 50px;
-    background-color: #000;
+    background-color: #a84bf9;
   }
   
   #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #e100ff;
+    background-image: linear-gradient(to top, #e126d4 0%, #fcfffb 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -44,6 +45,9 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+  }
+  #navbar__logo:hover {
+    background-image: linear-gradient(to top, #000000 0%, #000000 100%);
   }
   
   .fa-gem {
@@ -62,7 +66,7 @@
   }
   
   .navbar__links {
-    color: #fff;
+    color: #e1d1d1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,18 +94,20 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
-    color: #fff;
+    background: #060100;
+    color: #e1d1d1;
   }
   
   .button:hover {
-    background: #4837ff;
+    background: #fcfcfc;
+    color: rgb(249, 5, 249);
     transition: all 0.3s ease;
   }
   
   .navbar__links:hover {
-    color: #f77062;
+    color: #ffffff;
     transition: all 0.3s ease;
+    background-color: rgb(217, 114, 248);
   }
   
   @media screen and (max-width: 960px) {
@@ -129,7 +135,7 @@
     }
   
     .navbar__menu.active {
-      background: #131313;
+      background: #9151c8;
       top: 100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -198,5 +204,143 @@
       transform: translateY(-8px) rotate(-45deg);
     }
   }
-  
- 
+
+/* Welcome section */
+
+.intro {
+  background: white;
+  background: linear-gradient(to right, #e1d1d1, white);
+  padding: 200px 0;
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 30px;
+}
+
+.intro_h1 {
+  font-size: 70px;
+  margin-bottom: 24px;
+  color: black;
+}
+
+/* project */
+
+.project {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.project h1 {
+  background: white;
+  background: linear-gradient(to right, #e1d1d1, white);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 10rem;
+  font-size: 2.5rem;
+}
+
+.project__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.project__items {
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  transition: 0.3s ease-in;
+}
+
+.project__items h2 {
+  text-align: center;
+}
+
+.project__items p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+.project__link {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  text-decoration: none;
+  color: white:
+}
+
+.project__link:hover{
+  color: black;
+}
+
+.project__items button {
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #131313;
+  font-size: 1rem;
+}
+
+.project__items button:hover {
+  cursor: pointer;
+}
+
+.project__items:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .project__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About Me */
+
+.aboutme {
+  background: white;
+  background: linear-gradient(to right, #e1d1d1, white);
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.aboutme h1 {
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.aboutme__items {
+  text-align: left;
+  font-size: 20px;
+  margin: 0 150px;
+}
+
+
