@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#intro" id="navbar__logo">Ivan Pan</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#intro" class="navbar__links" id="intro-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#project" class="navbar__links" id="project-page">Project</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">About Me</a>
+          </li>
+          <li class="navbar__btn"><a href="https://github.com/ivanpan0626" target="_blank" class="button">Github</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="intro" id="intro">
+      <div class="intro__container">
+        <h1 class="intro_h1">Hello there, <br> Welcome to my page!</h1>
+      </div>
+    </div>
+
+    <div class="project" id="project">
+      <h1>My Projects</h1>
+      <div class="project__container">
+        <div class="project__items">
+          <h2>Play2048</h2>
+          <p>Your average 2048 game programmed using Java</p>
+          <a class ="project__link" href="https://github.com/ivanpan0626/Play2048/tree/main" target="_blank">Check it out!</a>
+        </div>
+        <div class="project__items">
+          <h2>Hunan Express Webpage (WIP)</h2>
+          <p>Website for ordering food online from Hunan Express</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutme" id="aboutme">
+      <h1>Who am I?</h1>
+      <div class="aboutme__container">
+        <div class="aboutme__items">
+          <ul>
+            <li>Hello there, my name is Ivan Pan</li>
+            <li>I'm Chinese that was born and raised in America.</li>
+            <li>I can speak fluent English and Chinese (Mando, Fujian) </li>
+            <li>Sophomore attending Rutgers N.B, pursuing CS degree</li>
+          </ul>
+
+          <p><br> <br>Looking for internships to boost my knowledge and gain hands on experience in the real world :D</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
