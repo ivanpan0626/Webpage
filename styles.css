@@ -289,11 +289,11 @@
   justify-content: center;
   margin-top: 16px;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .project__link:hover{
-  color: black;
+  color: white;
 }
 
 .project__items button {
