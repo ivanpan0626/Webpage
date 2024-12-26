@@ -11,6 +11,12 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
+          src={HunanExpressDemo}
+          link="https://hunanexpress.vercel.app"
+          h3="Hunan Express"
+          p="Hunan Express Online Ordering (90% Completed)"
+        />
+        <ProjectCard
           src={AILol}
           link="https://github.com/ivanpan0626/LoL-AI-Matchup-Predictor-with-Data-Analysis"
           h3="AI LoL"
@@ -27,12 +33,6 @@ function Projects() {
           link="https://github.com/ivanpan0626/AI-Anime-Recomender"
           h3="Recommendation System"
           p="Uses collaborative filtering for Anime"
-        />
-        <ProjectCard
-          src={HunanExpressDemo}
-          link="https://hunanexpress.vercel.app"
-          h3="Hunan Express"
-          p="Hunan Express Online Ordering (IN DEVELOPMENT)"
         />
       </div>
     </section>
