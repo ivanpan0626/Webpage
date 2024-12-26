@@ -30,9 +30,9 @@ function Projects() {
         />
         <ProjectCard
           src={HunanExpressDemo}
-          link="https://github.com/ivanpan0626/AI-Anime-Recomender"
+          link="https://hunanexpress.vercel.app"
           h3="Hunan Express"
-          p="Hunan Express Ordering Webapp (IN DEVELOPMENT)"
+          p="Hunan Express Online Ordering (IN DEVELOPMENT)"
         />
       </div>
     </section>
